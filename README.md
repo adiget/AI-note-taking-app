@@ -13,10 +13,7 @@ An intelligent Android application for automatic meeting note-taking with AI-pow
 
 ## 🎥 Demo
 
-<video width="300" controls>
-  <source src="SmartMeeting.webm" type="video/webm">
-  Your browser does not support the video tag.
-</video>
+![SmartMeetingAI Demo](SmartMeeting.gif)
 
 ---
 
