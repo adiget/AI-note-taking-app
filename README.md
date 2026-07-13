@@ -11,9 +11,32 @@ An intelligent Android application for automatic meeting note-taking with AI-pow
 
 ---
 
+## 💡 What I've Built
+
+### AI at the Core: Gemini Nano Integration
+This app leverages **Gemini Nano** (TensorFlow Lite BERT model) running entirely on-device for intelligent meeting processing:
+
+- **Dual AI Engine**: 
+  - **Primary**: Gemini Nano (TFLite) for on-device processing—no cloud calls, complete privacy
+  - **Fallback**: Rule-based engine using action word detection for broader device compatibility
+- **Intelligent Analysis**: Automatically processes transcribed text to:
+  - Extract concise meeting summaries (key sentences extraction)
+  - Identify keywords and important topics
+  - Detect action items using contextual language patterns (looks for action verbs like "will", "should", "must", "assign", etc.)
+- **Local-First Architecture**: All data stays on your device using Room database—no external API dependencies
+- **Smart Fallback**: Gracefully degrades to rule-based processing on devices where TFLite isn't available
+
+### Technical Implementation
+- TensorFlow Lite for efficient on-device inference
+- Coroutines for non-blocking AI processing
+- Hilt dependency injection for clean, testable architecture
+- MVVM pattern separating AI logic from UI concerns
+
+---
+
 ## 🎥 Demo
 
-![SmartMeetingAI Demo](SmartMeeting.gif)
+<img src="SmartMeeting.gif" alt="SmartMeetingAI Demo" width="320" />
 
 ---
 
